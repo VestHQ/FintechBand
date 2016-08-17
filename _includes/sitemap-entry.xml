@@ -1,5 +1,5 @@
 <url>
-  <loc>www.atripathi.com{{include.entry.url}}</loc>
+  <loc>www.fintechband.com{{include.entry.url}}</loc>
   {% if include.entry.changefreq %}
     <changefreq>{{include.entry.changefreq}}</changefreq>
   {% endif %}
