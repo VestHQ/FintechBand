@@ -1,14 +1,17 @@
-<div class="profiles">
+<section class="profiles">
   <ul>
-    <li>Anuraag</li>
-    <li>Min</li>
-    <li>Ross</li>
-    <li>Mike</li>
-    <li>Matt</li>
-    <li>Amit</li>
-    <li>Arpan</li>
-    <li>Gurmeet</li>
-    <li>Arvin</li>
-    <li>Enrique</li>
+    {% for people in site.posts %}
+      <li>
+        <a href="">{{people.name}}</a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+        <a href="{{people.facebook-url}}"></a>
+      </li>
+
+    {% endfor %}
   </ul>
-</div>
+</section>
