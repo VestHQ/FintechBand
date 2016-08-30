@@ -1,15 +1,18 @@
 <section class="serif profiles">
+  <div class="dropdown">
+    Sort by Network
+  </div>
+
   <ul>
     {% for people in site.posts %}
       <li>
-        <a href="">{{people.name}}</a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
-        <a href="{{people.facebook-url}}"></a>
+        <span>{{people.name}}</span>
+        <a class="twitter-link" href="{{people.twitter-url}}"></a>
+        <a class="facebook-link" href="{{people.facebook-url}}"></a>
+        <a class="youtube-link" href="{{people.youtube-url}}"></a>
+        <a class="linkedin-link" href="{{people.linkedin-url}}"></a>
+        <a class="angelist-link" href="{{people.angelist-url}}"></a>
+        <a class="producthunt-link" href="{{people.producthunt-url}}"></a>
       </li>
     {% endfor %}
   </ul>
