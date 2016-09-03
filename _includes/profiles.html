@@ -1,8 +1,15 @@
 <!-- profiles section -->
 <section class="serif profiles">
-  <div class="dropdown">
-    Sort by Network
-  </div>
+  <ul class="menu">
+    <!-- <li>Website</li> This one doesn't make sense. New publications are the way "TO GO". -->
+    <li>Twitter</li>
+    <li>Medium</li>
+    <li>Facebook</li>
+    <li>Youtube</li>
+    <li>Linkedin</li>
+    <li>Angel List</li>
+    <li>Product Hunt</li>
+  </ul>
 
   <ul class="parent">
     {% for people in site.posts %}
@@ -10,6 +17,9 @@
         <span>{{people.name}}</span>
         {% if people.twitter-url %}
         <a class="twitter-link url" href="{{people.twitter-url}}"></a>
+        {% endif %}
+        {% if people.medium-url %}
+        <a class="medium-link url" href="{{people.medium-url}}"></a>
         {% endif %}
         {% if people.facebook-url %}
         <a class="facebook-link url" href="{{people.facebook-url}}"></a>
