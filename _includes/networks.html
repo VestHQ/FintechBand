@@ -1,0 +1,46 @@
+<!-- networks section -->
+<section class="serif profiles">
+  <div class="menu">
+    <p>Sort by</p>
+    <ul class="parent">
+      <li class="media twitter-link"><a href="#">Twitter</a></li>
+      <li class="media medium-link"><a href="#">Medium</a></li>
+      <li class="media facebook-link"><a href="#">Facebook</a></li>
+      <li class="media youtube-link"><a href="#">Youtube</a></li>
+      <li class="media linkedin-link"><a href="#">Linkedin</a></li>
+      <li class="media angelist-link"><a href="#">Angel List</a></li>
+      <li class="media producthunt-link"><a href="#">Product Hunt</a></li>
+    </ul>
+  </div>
+
+  {% if site.url == "/twitter" %}
+    <ul class="parent">
+      {% for people in site.posts %}
+        <li class="item">
+          <span>{{people.name}}</span>
+          {% if people.twitter-url %}
+          <a class="twitter-link url" href="{{people.twitter-url}}"></a>
+          {% endif %}
+          {% if people.medium-url %}
+          <a class="medium-link url" href="{{people.medium-url}}"></a>
+          {% endif %}
+          {% if people.facebook-url %}
+          <a class="facebook-link url" href="{{people.facebook-url}}"></a>
+          {% endif %}
+          {% if people.youtube-url %}
+          <a class="youtube-link url" href="{{people.youtube-url}}"></a>
+          {% endif %}
+          {% if people.linkedin-url %}
+          <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
+          {% endif %}
+          {% if people.angelist-url %}
+          <a class="angelist-link url" href="{{people.angelist-url}}"></a>
+          {% endif %}
+          {% if people.producthunt-url %}
+          <a class="producthunt-link url" href="{{people.producthunt-url}}"></a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+</section>
