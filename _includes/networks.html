@@ -13,7 +13,7 @@
     </ul>
   </div>
 
-  {% if site.url == "/twitter" %}
+  {% if site.url == "{{baseurl}}/twitter" %}
     <ul class="parent">
       {% for people in site.posts %}
         <li class="item">
@@ -41,6 +41,8 @@
           {% endif %}
         </li>
       {% endfor %}
+    {% else %}
+        <p>Ooops something is broken!</p>
     {% endif %}
   </ul>
 </section>
