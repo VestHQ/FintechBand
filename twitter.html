@@ -6,7 +6,7 @@ permalink: /twitter
   <div class="menu">
     <p>Sort by</p>
     <ul class="parent">
-      <li class="media twitter-link"><a href="#">Twitter</a></li>
+      <li class="media selected twitter-link"><a href="#">Twitter</a></li>
       <li class="media medium-link"><a href="#">Medium</a></li>
       <li class="media facebook-link"><a href="#">Facebook</a></li>
       <li class="media youtube-link"><a href="#">Youtube</a></li>
@@ -17,7 +17,7 @@ permalink: /twitter
   </div>
 
   <ul class="parent">
-    {% for people in site.posts %}
+    {% for people in site.tags.twitter %}
       <li class="item">
         <span>{{people.name}}</span>
         {% if people.twitter-url %}
