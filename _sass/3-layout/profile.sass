@@ -11,10 +11,14 @@
 
 .media
   margin: 0 5px 0 0
-  +size(30px)
+  a
+    display: block
+    +size(2em)
 
 .selected
-  +size(45px)
+  // a
+  //   display: block
+  //   +size(4em)
 
 a
   text-decoration: none
@@ -23,9 +27,11 @@ a
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  // text-align: center
   span
     text-align: center
     margin-left: 25%
+
 
 .item
   width: 33.3333%
@@ -33,7 +39,7 @@ a
 // change width based on device size (need 2 veiwports here)
 
 .url
-  +size(20px)
+  +size(1em)
   display: inline-block
 
 .twitter-link
