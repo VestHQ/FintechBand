@@ -1,15 +1,15 @@
 ---
 layout: network
-permalink: /twitter
+permalink: /youtube
 ---
 <section class="serif profiles">
   <div class="menu">
     <p>Sort by</p>
     <ul class="parent">
-      <li class="media selected twitter-link"><a href="/twitter">Twitter</a></li>
+      <li class="media twitter-link"><a href="/twitter">Twitter</a></li>
       <li class="media medium-link"><a href="/medium">Medium</a></li>
       <li class="media facebook-link"><a href="/facebook">Facebook</a></li>
-      <li class="media youtube-link"><a href="/youtube">Youtube</a></li>
+      <li class="media selected youtube-link"><a href="/youtube">Youtube</a></li>
       <li class="media linkedin-link"><a href="/linkedin">Linkedin</a></li>
       <li class="media angelist-link"><a href="/angellist">Angel List</a></li>
       <li class="media producthunt-link"><a href="/producthunt">Product Hunt</a></li>
@@ -17,7 +17,7 @@ permalink: /twitter
   </div>
 
   <ul class="parent">
-    {% for people in site.tags.twitter %}
+    {% for people in site.tags.youtube %}
       <li class="item">
         <span>{{people.name}}</span>
         {% if people.twitter-url %}

@@ -1,23 +1,23 @@
 ---
 layout: network
-permalink: /twitter
+permalink: /producthunt
 ---
 <section class="serif profiles">
   <div class="menu">
     <p>Sort by</p>
     <ul class="parent">
-      <li class="media selected twitter-link"><a href="/twitter">Twitter</a></li>
+      <li class="media twitter-link"><a href="/twitter">Twitter</a></li>
       <li class="media medium-link"><a href="/medium">Medium</a></li>
       <li class="media facebook-link"><a href="/facebook">Facebook</a></li>
       <li class="media youtube-link"><a href="/youtube">Youtube</a></li>
       <li class="media linkedin-link"><a href="/linkedin">Linkedin</a></li>
-      <li class="media angelist-link"><a href="/angellist">Angel List</a></li>
-      <li class="media producthunt-link"><a href="/producthunt">Product Hunt</a></li>
+      <li class="media angellist-link"><a href="/angellist">Angel List</a></li>
+      <li class="media selected producthunt-link"><a href="/producthunt">Product Hunt</a></li>
     </ul>
   </div>
 
   <ul class="parent">
-    {% for people in site.tags.twitter %}
+    {% for people in site.tags.producthunt %}
       <li class="item">
         <span>{{people.name}}</span>
         {% if people.twitter-url %}
@@ -35,8 +35,8 @@ permalink: /twitter
         {% if people.linkedin-url %}
         <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
         {% endif %}
-        {% if people.angelist-url %}
-        <a class="angelist-link url" href="{{people.angelist-url}}"></a>
+        {% if people.angellist-url %}
+        <a class="angellist-link url" href="{{people.angellist-url}}"></a>
         {% endif %}
         {% if people.producthunt-url %}
         <a class="producthunt-link url" href="{{people.producthunt-url}}"></a>
