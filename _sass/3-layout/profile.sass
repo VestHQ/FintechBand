@@ -2,6 +2,9 @@
 .profiles
   box-sizing: border-box
 
+li
+  vertical-align: middle
+
 .menu
   display: flex
   justify-content: center
@@ -14,11 +17,12 @@
 .media
   margin: 0 15px 0 0
   a
+    padding-left: 2px
     display: block
     +size(1.5em 1.4em)
 
 .selected
-  opacity: .75
+  border-bottom: 2px solid black
 
 a
   text-decoration: none
