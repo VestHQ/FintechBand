@@ -1,6 +1,7 @@
 // profile styles
 .profiles
   box-sizing: border-box
+  font-weight: 700
 
 li
   vertical-align: middle
@@ -28,17 +29,21 @@ a
   text-decoration: none
 
 .parent
+  margin-left: 8%
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  // text-align: center
+  position: relative
   span
+    display: inline-block
     text-align: center
-    margin-left: 25%
-
+    width: 125px
+    text-align: left
 
 .item
   width: 33.3333%
+  margin: 0 0 7px 0
+
 
 // change width based on device size (need 2 veiwports here)
 
@@ -46,6 +51,7 @@ a
   +size(1em)
   display: inline-block
   border-radius: 3px
+  margin-left: 3px
 
 .twitter-link
   background-color: #00A8E8
