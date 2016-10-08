@@ -4,7 +4,7 @@ permalink: /medium
 priority: 0.5
 changefreq: monthly
 ---
-<section class="serif profiles">
+<section class="sans-serif profiles">
   <div class="menu">
     <ul class="parent">
       <li class="media"><a title="twitter" href="/twitter"><img src="/assets/img/twitter-with-circle.svg" alt="" /></a></li>
@@ -17,6 +17,10 @@ changefreq: monthly
     </ul>
   </div>
 
+  <div class="summary-link">
+    <a href="#">Follow Everyone using our Twitter List</a>
+  </div>
+
   <ul class="parent">
     {% for people in site.tags.medium %}
       <li class="item">
@@ -24,23 +28,23 @@ changefreq: monthly
         {% if people.twitter-url %}
         <a class="twitter-link url" href="{{people.twitter-url}}"></a>
         {% endif %}
-        {% if people.medium-url %}
-        <a class="medium-link url" href="{{people.medium-url}}"></a>
+        {% if people.linkedin-url %}
+        <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
         {% endif %}
         {% if people.facebook-url %}
         <a class="facebook-link url" href="{{people.facebook-url}}"></a>
         {% endif %}
-        {% if people.youtube-url %}
-        <a class="youtube-link url" href="{{people.youtube-url}}"></a>
-        {% endif %}
-        {% if people.linkedin-url %}
-        <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
-        {% endif %}
-        {% if people.angellist-url %}
-        <a class="angellist-link url" href="{{people.angellist-url}}"></a>
+        {% if people.medium-url %}
+        <a class="medium-link url" href="{{people.medium-url}}"></a>
         {% endif %}
         {% if people.producthunt-url %}
         <a class="producthunt-link url" href="{{people.producthunt-url}}"></a>
+        {% endif %}
+        {% if people.youtube-url %}
+        <a class="youtube-link url" href="{{people.youtube-url}}"></a>
+        {% endif %}
+        {% if people.angellist-url %}
+        <a class="angellist-link url" href="{{people.angellist-url}}"></a>
         {% endif %}
       </li>
     {% endfor %}
