@@ -14,6 +14,7 @@ h1
 #home
   font-size: 42px
   font-weight: 900
+  text-shadow: 1px 1px
   text-transform: uppercase
   line-height: 1.5
   color: #028090
@@ -21,7 +22,7 @@ h1
 
 h2
   // check medium's font size
-  padding: 40px 0
+  padding: 8% 0
   line-height: 1.5
   a
     text-decoration: none
@@ -43,3 +44,15 @@ h2
     font-weight: 900
 
 // setup the display to no flex, margin bottom around 1023px
+
+@media screen and (max-width: $break-tablet)
+  header
+    display: block
+
+  h1
+    text-align: center
+    padding-top: 10%
+
+@media screen and (max-width: $break-mobile)
+  #home
+    font-size: 30px

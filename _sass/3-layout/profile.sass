@@ -44,8 +44,7 @@ a
   flex-wrap: wrap
   span
     display: inline-block
-    text-align: center
-    width: 125px
+    width: 33%
     text-align: left
 
 .item
@@ -77,3 +76,14 @@ a
 
 //1023px media query to 50%
 // 550px media query to 100%
+
+@media screen and (max-width: $break-tablet)
+  .item
+    width: 50%
+  .url
+    margin-left: 1%
+
+@media screen and (max-width: $break-mobile)
+  .item
+    width: 98%
+    margin-right: 2%
