@@ -19,13 +19,13 @@ changefreq: monthly
 
   <div class="summary-link">
     <a href="#">Follow Everyone using our Twitter List</a>
-  </div>  
+  </div>
 
   <ul class="parent">
     {% for people in site.tags.producthunt %}
       <li class="item">
         <span>{{people.name}}</span>
-        {% if people.twitter-url %}
+        <!-- {% if people.twitter-url %}
         <a class="twitter-link url" href="{{people.twitter-url}}"></a>
         {% endif %}
         {% if people.linkedin-url %}
@@ -36,16 +36,16 @@ changefreq: monthly
         {% endif %}
         {% if people.medium-url %}
         <a class="medium-link url" href="{{people.medium-url}}"></a>
-        {% endif %}
+        {% endif %} -->
         {% if people.producthunt-url %}
         <a class="producthunt-link url" href="{{people.producthunt-url}}"></a>
         {% endif %}
-        {% if people.youtube-url %}
+        <!-- {% if people.youtube-url %}
         <a class="youtube-link url" href="{{people.youtube-url}}"></a>
         {% endif %}
         {% if people.angellist-url %}
         <a class="angellist-link url" href="{{people.angellist-url}}"></a>
-        {% endif %}
+        {% endif %} -->
       </li>
     {% endfor %}
   </ul>
