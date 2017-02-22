@@ -28,13 +28,13 @@ changefreq: monthly
 
   <ul class="parent">
     {% for people in site.tags.linkedin %}
-      <li target="_blank" class="item">
+      <li class="item">
         <span>{{people.name}}</span>
         <!-- {% if people.twitter-url %}
         <a class="twitter-link url" href="{{people.twitter-url}}"></a>
         {% endif %} -->
         {% if people.linkedin-url %}
-        <a class="linkedin-link url" href="{{people.linkedin-url}}"></a>
+        <a target="_blank" class="linkedin-link url" href="{{people.linkedin-url}}"></a>
         {% endif %}
         <!-- {% if people.facebook-url %}
         <a class="facebook-link url" href="{{people.facebook-url}}"></a>
